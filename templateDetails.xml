@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.1" type="template" client="site"> 
+<name>template_onir</name> 
+<creationDate>Aprile 2022</creationDate> 
+<author>Rino Ruggeri</author> 
+<authorEmail>rino.ruggeri@gmail.com</authorEmail> 
+<authorUrl>https://www.nomedominio.xy</authorUrl> 
+<copyright>Rino Ruggeri 2022</copyright> 
+<description> Il mio Template personalizzato per Joomla 4</description> 
+<files> 
+
+<folder>css</folder>
+ <folder>js</folder> 
+ <folder>html</folder>
+<filename>index.php</filename> 
+<filename>templateDetails.xml</filename> 
+
+</files> 
+
+
+	<positions>
+		<position>topbar</position>
+		<position>below-top</position>
+		<position>menu</position>
+		<position>search</position>
+		<position>banner</position>
+		<position>top-a</position>
+		<position>top-b</position>
+		<position>main-top</position>
+		<position>main-bottom</position>
+		<position>breadcrumbs</position>
+		<position>sidebar-left</position>
+		<position>sidebar-right</position>
+		<position>bottom-a</position>
+		<position>bottom-b</position>
+		<position>footer</position>
+		<position>debug</position>
+	</positions>
+
+<config>
+ <fields name="params" >	  
+   <fieldset name="Layout" label="Impostazioni del layout del sito">
+    
+	 <field name="logo" type="radio" default="1" label="Logo" description="Vuoi usare un logo per il tuo sito?">			
+        <option value="0">No </option>			
+        <option value="1">Si </option>		
+    </field>
+
+    <field name="logofile" type="media" label="Inserisci qui il Logo" />
+
+    <field type="spacer" name="block1" hr="true" />
+
+    <field name="titolo" type="radio" default="1" label="Titolo del sito" description="Vuoi usare il titolo del sito?">			
+        <option value="0">No </option>			
+        <option value="1">Si </option>		
+    </field>
+
+    <field name="header" type="radio" default="1" label="Fissa header" description="Vuoi fissare in alto l header?">			
+        <option value="0">No </option>			
+        <option value="1">Si </option>		
+    </field>
+
+    <field name="sitetitle" type="text" default="" label="Inserisci il titolo del sito, fallo anche se non lo userai" />
+
+   </fieldset>
+  </fields>
+</config>
+
+
+</extension>
